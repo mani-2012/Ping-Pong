@@ -22,12 +22,11 @@ var ball = {
 }
 
 function setup(){
-  var canvas =  createCanvas(700,600);
+canvas =  createCanvas(700,600);
 }
 
 
 function draw(){
-
  background(0); 
 
  fill("black");
