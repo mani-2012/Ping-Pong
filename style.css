@@ -1,0 +1,21 @@
+#camarada{
+    display: inline;
+}
+#nada{
+    display: inline;
+}
+button{
+    background-color: rgb(56, 70, 179);
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    border-radius: 14%;
+}
+h4{
+    background-color: burlywood;
+}
+.modal-dialog{
+    width: 90%;
+}
+.id{
+    display: inline-block;
+}
