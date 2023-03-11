@@ -23,9 +23,25 @@ var ball = {
 
 function setup(){
 canvas =  createCanvas(700,600);
+videos = createCapture(VIDEO);
+videos.size(600,300);
+poseNet = ml5.poseNet(videos, modelLoaded);
+poseNet.on('pose', Poses);
+videos.parent("cam");
+canvas.parent("lili");
 }
-
-
+function Poses(results)
+{
+  if(results.length > 0)
+  {
+    noseX = results[0].pose.nose.x;
+    noseY = results[0].pose.nose.y;
+    console.log("noseX = " + noseX +", noseY = " + noseY);
+  }
+}
+function modelLoaded() {
+	console.log('¡El modelo, ya esta cargado!');
+      }
 function draw(){
  background(0); 
 

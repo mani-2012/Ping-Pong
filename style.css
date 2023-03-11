@@ -23,3 +23,10 @@ h2{
     color: azure;
     background-color: coral;
 }
+video{
+    background: url('swich.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    float: inline-start;
+}
